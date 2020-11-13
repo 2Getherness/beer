@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main-page.js" defer></script>
+    <title>Form</title>
+    <style>body {background: #b9b9b8 } 
+    .top-article {display: flex ;} 
+    .randomBeer-view {text-align: center; width: auto; background-color: #4ca5a5; width: 250px;} 
+    img {height: 200px; max-width: 150px; margin: auto;}
+    .top-article #showAdvanced-btn {background-color: black; color: white; padding: 0 5px; display: block; margin-left: 130px; margin-top: 10px;}
+    .top-article #showRandom-btn {color: white; background-color: green; padding: 10px; border-radius: 5px;}
+    .card-body {position: relative; text-align: left; background-color: azure; height: 150px;}
+    .show-details {position: absolute; bottom: 5px; background-color: orange; border-radius: 10px; color: white; font-weight: 500; padding: 10px;}
+    </style>
+</head>
+
+<body>
+
+    <article class="top-article">
+        <form id="first-search-form">
+            <label for="beerElement">Search Beer:</label>
+            <input type="text" name="beerElement">
+            <input type="submit" value="Search">
+            <button id="showAdvanced-btn">Addvanced Search</button>
+        </form>
+        <section class="advanced-search-section" style="display: none;">
+            <form>
+                <label for="beerElement">Advanced Search Beer:</label>
+                <input type="text" name="beerElement" placeholder="Search with hops">
+                <input type="submit" value="Sök">
+            </form>
+        </section>
+        <div style="width: 200px;"></div>
+        <button id="showRandom-btn"> Show random </button>
+        <section style="display: none;" class="randomBeer-view"></section>
+    </article>
+    <main>
+        
+    </main>
+</body>
+
+</html>
